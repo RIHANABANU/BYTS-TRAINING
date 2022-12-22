@@ -4,8 +4,8 @@ class Solution {
       for(int i=0;i<s.length();i++)
         arr[s.charAt(i)-'a']++;
       for(int j=0;j<t.length();j++)
-        arr[t.length(j)-'a']--;
-      for(int i:mat)
+        arr[t.charAt(j)-'a']--;
+      for(int i:arr)
         if(i!=0)
           return false;
       return true;
